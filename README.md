@@ -3,8 +3,9 @@
 
 Tampilan Profile dan Artwork
 
-![Gambar 1](https://github.com/alexisabdi05/session3/blob/master/Web%20capture_2-4-2023_11457_127.0.0.1.jpeg)
+![Gambar 1](https://github.com/alexisabdi05/session3/blob/master/Web%20capture_2-4-2023_193618_127.0.0.1.jpeg)
 ![Gambar 2](https://github.com/alexisabdi05/session3/blob/master/Web%20capture_2-4-2023_42551_127.0.0.1.jpeg)
+![Gambar 3](https://github.com/alexisabdi05/session3/blob/master/Screenshot%202023-04-02%20042646.png)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
