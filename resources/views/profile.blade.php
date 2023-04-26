@@ -24,6 +24,10 @@
             <button class="nv nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
                 type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Art Gallery</button>
         </li>
+        <li class="nav-item" role="presentation">
+            <button class="nv nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">My Product</button>
+        </li>
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
@@ -215,6 +219,35 @@
                     </div>
                 </div>
                 <!-- Gallery -->
+            </div>
+            <div class="tab-pane fade hov" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+            tabindex="0">
+            <div class="lol">
+            <p>League of Legend Champion</p>
+            <div class="text-center">
+                @foreach ($product as $prd)
+                    @if ($prd['status'] == 'R')
+                        <a href="/mantap/{{$prd['id']}}" style="text-decoration: none"><div class ="cham" style="border: silver solid 5px; background-image: url('Assets/{{$prd['nama']}}.jpg'); box-shadow: silver 5px 5px 35px">
+                            <h2>{{ $prd['nama'] }}</h2>
+                            <h3>Difficulty: {{ $prd['status'] }}</h3>
+                            <h3>Champion Price:{{ $prd['price'] }}</h3>
+                        </div></a>
+                    @elseif ($prd['status'] == 'SR')
+                    <a href="/mantap/{{$prd['id']}}" style="text-decoration: none"><div class ="cham"  style="border: gold solid 5px; background-image: url('Assets/{{$prd['nama']}}.jpg'); box-shadow: gold 5px 5px 35px">
+                            <h2>{{ $prd['nama'] }}</h2>
+                            <h3>Difficulty: {{ $prd['status'] }}</h3>
+                            <h3>Champion Price: {{ $prd['price'] }}</h3>
+                        </div></a>
+                    @else
+                    <a href="/mantap/{{$prd['id']}}" style="text-decoration: none"> <div class ="cham"  style="border: red solid 5px; background-image: url('Assets/{{$prd['nama']}}.jpg'); box-shadow: red 5px 5px 35px">
+                            <h2>{{ $prd['nama'] }}</h2>
+                            <h3>Difficulty: {{ $prd['status'] }}</h3>
+                            <h3>Champion Price: {{ $prd['price'] }}</h3>
+                        </div></a>
+                    @endif
+                @endforeach
+            </div>
+            </div>
             </div>
     </div>
 

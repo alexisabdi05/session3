@@ -126,3 +126,44 @@ figure{
 .hov img:hover{
     box-shadow: 0px 0px 25px 7px red;
 }
+
+.lol {
+    background-image: url("Assets/download.jpeg");
+}
+
+.lol p {
+    font-size: 6vw;
+    font-weight: 900;
+    -webkit-text-stroke: black 2px;
+    text-shadow: black 3px 3px 5px;
+    color: aliceblue;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.cham:hover{
+    box-shadow: 0px 0px 25px 7px red;
+}
+
+.cham {
+    width: 50vw;
+    min-height: 23vw;
+    margin: 3vw auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cham h2, .cham h3{
+    color: aliceblue;
+    font-size: 4vw;
+    font-weight: 800;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    margin: -0.3vw;
+    padding: 0;
+}
+ .cham h3{
+    font-size: 3vw;
+    border: none;
+}
+

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MantapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('profile');
-});
+// Route::get('/', function () {
+//     return view('profile');
+// });
+Route::get('/',[MantapController::class, 'index']);
+Route::get('/mantap/{id}',[MantapController::class, 'show']);
